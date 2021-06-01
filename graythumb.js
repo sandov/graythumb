@@ -1,9 +1,14 @@
+var sheet = window.document.styleSheets[0];
+sheet.insertRule('.ytd-thumbnail img { filter: grayscale(100%); }', sheet.cssRules.length);
+sheet.insertRule('.ytd-thumbnail img { filter: grayscale(100%); }', sheet.cssRules.length);
+
+/*
 homepage_grid_selector = "#contents.style-scope.ytd-rich-grid-renderer";
 homepage_grid = document.querySelector(homepage_grid_selector);
 
 const callback = function(mutList, observer){
     mutList.forEach(mut => {
-        console.log("mutation");
+        console.log(mut);
     })
 }
 
@@ -11,7 +16,7 @@ let observer = new MutationObserver(callback);
 const observer_config = {childList: true};
 observer.observe(homepage_grid, observer_config);
 
-/*
+
 let thumbnails_selector = ".ytd-thumbnail img";
 let avatars_selector = ".avatar img";
 
