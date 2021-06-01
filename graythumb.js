@@ -1,10 +1,18 @@
 let style = document.createElement('style');
-style.type = 'text/css';
+
+selectors = [
+    'ytd-browse.style-scope.ytd-page-manager',
+    '.ytd-watch-next-secondary-results-renderer',
+    '#contents.style-scope.ytd-rich-grid-renderer',
+];
+
+declaration = "{filter: grayscale(100%);}";
+
+rule = selectors.join(', ') + declaration;
 
 if(style.styleSheet){
-    style.styleSheet.cssText='#contents.style-scope.ytd-rich-grid-renderer{filter: grayscale(100%);}';
+    style.styleSheet.cssText=rule;
 }else{
-    style.appendChild(document.createTextNode('#contents.style-scope.ytd-rich-grid-renderer{filter: grayscale(100%);}'));
+    style.appendChild(document.createTextNode(rule));
 }
 document.getElementsByTagName('head')[0].appendChild(style);
-
