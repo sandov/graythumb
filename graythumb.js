@@ -1,32 +1,10 @@
-var sheet = window.document.styleSheets[0];
-sheet.insertRule('.ytd-thumbnail img { filter: grayscale(100%); }', sheet.cssRules.length);
-sheet.insertRule('.ytd-thumbnail img { filter: grayscale(100%); }', sheet.cssRules.length);
+let style = document.createElement('style');
+style.type= 'text/css';
 
-/*
-homepage_grid_selector = "#contents.style-scope.ytd-rich-grid-renderer";
-homepage_grid = document.querySelector(homepage_grid_selector);
-
-const callback = function(mutList, observer){
-    mutList.forEach(mut => {
-        console.log(mut);
-    })
+if(style.styleSheet){
+    style.styleSheet.cssText='your css styles';
+}else{
+    style.appendChild(document.createTextNode('#contents.style-scope.ytd-rich-grid-renderer{filter: grayscale(100%);}'));
 }
+document.getElementsByTagName('head')[0].appendChild(style);
 
-let observer = new MutationObserver(callback);
-const observer_config = {childList: true};
-observer.observe(homepage_grid, observer_config);
-
-
-let thumbnails_selector = ".ytd-thumbnail img";
-let avatars_selector = ".avatar img";
-
-if (apply_to_thumbnails){
-    thumbnails = document.querySelectorAll(thumbnails_selector);
-    thumbnails.forEach(thumbnail => thumbnail.style.filter = "grayscale(100%)");
-}
-
-if (apply_to_avatars){
-    avatars = document.querySelectorAll(avatars_selector);
-    avatars.forEach(avatar => avatar.style.filter = "grayscale(100%)");
-}
-*/
