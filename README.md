@@ -1,6 +1,6 @@
 # GrayThumb
 
-## Curb your YouTube addiction.
+## Do you waste too much time watching YouTube
 
 GrayThumb applies a grayscale filter to YouTube video Thumbnails.
 
