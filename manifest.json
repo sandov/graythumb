@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Grey Thumb",
+    "name": "GreyThumb",
     "version": "1.0",
 
-    "description": "turn Youtube thumbnails into grayscale images",
+    "description": "Turn Youtube thumbnails into grayscale images",
 
     "icons":{
     	"48": "icons/graythumb-48.png",
