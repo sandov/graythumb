@@ -1,14 +1,14 @@
 let style = document.createElement('style');
 
-selectors = [
+const selectors = [
     'ytd-browse.style-scope.ytd-page-manager',
     '.ytd-watch-next-secondary-results-renderer',
     '#contents.style-scope.ytd-rich-grid-renderer',
 ];
 
-declaration = "{filter: grayscale(100%);}";
+const declaration = "{filter: grayscale(100%);}";
 
-rule = selectors.join(', ') + declaration;
+const rule = selectors.join(', ') + declaration;
 
 if(style.styleSheet){
     style.styleSheet.cssText=rule;
