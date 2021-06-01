@@ -1,10 +1,13 @@
 let style = document.createElement('style');
 
-const selector = 'ytd-thumbnail';
+const selectors = [
+    'ytd-thumbnail',
+    '#avatar img',
+];
 
 const declaration = "{filter: grayscale(100%);}";
 
-const rule = selector + declaration;
+const rule = selectors.join(', ') + declaration;
 
 if(style.styleSheet){
     style.styleSheet.cssText=rule;
