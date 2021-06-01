@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Grey Thumb",
+    "version": "1.0",
+
+    "description": "turn Youtube thumbnails into grayscale images",
+
+    "icons":{
+    	"48": "icons/graythumb-48.png",
+        "96": "icons/graythumb-96.png"
+    },
+
+    "content_scripts":[
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["graythumb.js"]
+        }
+    ]
+}
