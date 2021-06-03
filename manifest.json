@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "GreyThumb",
+    "name": "graythumb",
     "version": "1.0",
 
     "description": "Turn Youtube thumbnails into grayscale images",
