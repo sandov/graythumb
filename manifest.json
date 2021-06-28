@@ -15,5 +15,10 @@
             "matches": ["*://*.youtube.com/*"],
             "js": ["graythumb.js"]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "example@example.com"
+	}
+    }
 }
