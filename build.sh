@@ -1,2 +1,2 @@
 mkdir -p ./build/
-zip -r -FS ./build/graythumb.zip * --exclude '*.git*'
+zip -r -FS ./build/graythumb.zip * --exclude '*.git*' 'build.sh'
