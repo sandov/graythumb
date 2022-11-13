@@ -18,7 +18,7 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "__your_id_here"
+            "id": "__id"
 		}
     }
 }
