@@ -17,4 +17,4 @@ else {
     style.appendChild(document.createTextNode(rule));
 }
 
-document.getElementsByTagName('head')[0].appendChild(style);
+document.head.appendChild(style);
