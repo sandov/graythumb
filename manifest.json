@@ -18,7 +18,7 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "__id"
+            "id": "some.id.for.your.extension@example.com"
 		}
     }
 }
